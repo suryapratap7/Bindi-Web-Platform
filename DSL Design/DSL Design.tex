@@ -1,0 +1,214 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.4 (15/5/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[twoside,twocolumn]{article}
+
+\usepackage{blindtext} % Package to generate dummy text throughout this template 
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[english]{babel} % Language hyphenation and typographical rules
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+
+\usepackage{enumitem} % Customized lists
+\setlist[itemize]{noitemsep} % Make itemize lists more compact
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{DSL Design for Bindi $\bullet$ Oct 2017} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\usepackage{titling} % Customizing the title section
+
+\usepackage{hyperref} % For hyperlinks in the PDF
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\setlength{\droptitle}{-4\baselineskip} % Move the title up
+
+\pretitle{\begin{center}\Huge\bfseries} % Article title formatting
+\posttitle{\end{center}} % Article title closing formatting
+\title{DSL Syntax for Bindi} % Article Title
+\author{%
+\textsc{Alex Hamilton-Smith}\\[1ex] % Your name
+\normalsize Australian National University, Australia \\ % Your institution
+\normalsize \href{mailto:tlprofservteam@gmail.com}{tlprofservteam@gmail.com} % Your email address
+%\and % Uncomment if 2 authors are required, duplicate these 4 lines if more
+%\textsc{Jane Smith}\thanks{Corresponding author} \\[1ex] % Second author's name
+%\normalsize University of Utah \\ % Second author's institution
+%\normalsize \href{mailto:jane@smith.com}{jane@smith.com} % Second author's email address
+}
+\date{October, 2017} % Leave empty to omit a date
+%\renewcommand{\maketitlehookd}{%
+%\begin{abstract}
+%\noindent \blindtext % Dummy abstract text - replace \blindtext with your abstract text
+%\end{abstract}
+%}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% Print the title
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+
+\lettrine[nindent=0em,lines=3]{W} hen Shayne first suggested we develop a Domain-Specific-Language for the Bindi problem I was sceptical. Yes, Bindi requires as a first step the translation of sometimes complex natural language requirements to computation but this did not seem to me to be beyond what we could do with established programming languages. I suspected it would only complicate the issue to introduce a new language. As usual I'd understood one thing and misunderstood two others.
+\paragraph*{}
+The Domain-Specific-Language this document aims to define is as simple as it can be and specific to the Bindi problem. The Bindi problem is that of formally defining requirements for Courses and Degrees/Programs and collecting a user plan before automating actions in response to problems Bindi detects.
+\paragraph*{}
+By requirements we mean formal notation for Course level requirements:
+\begin{enumerate}
+
+\item course x is incompatible with course y
+\item course x is a prerequisite for course y
+\item course x is a corequisite for course y
+\end{enumerate}
+%------------------------------------------------
+And Degree/Program level requirements of a similar format:
+\begin{enumerate}
+\item Degree x requires compulsory courses y
+\item Degree x requires y number of units
+\item Degree x requires y number of units from a list, z, of courses
+\end{enumerate}
+\section{Definitions}
+
+In order to be sufficiently specific in the following sections we shall define some terms. First, we must refer to a data structure which contains a set of potential enrolments for a single student over the course of a finite number of semesters. This is the thing we inspect for errors. In line with the current \href{https://drive.google.com/open?id=0B6Gi8SxOYcVcQ3JFRE9yY3dTVmM}{\textbf{\textit{Bindi data model}}}, we shall call this, the EnrolmentOutline.
+\paragraph*{}
+Similarly, we shall take from the data model the idea of a CourseVersion and a CourseInstance. Regarding their difference, the CourseVersion is all non-temporally-specific information. For example this includes things like course name and course code which are the same across two different semesters. The CourseInstance contains reference to a specific semester in which the course was run and includes information such as the identity of the convenor.
+\paragraph*{}
+Finally, our last important concept is that of the SubPlan. A subplan in our data model is defined as a set of rules, defined in this DSL, which are applicable under that subplan. To be somewhat more specific, a subplan could include any of the following:
+\begin{enumerate}
+\item Degree aka Program
+\item Specialisation
+\item Minor
+\item Major
+\item International Student Visa Requirements
+\item Double Degree Requirements
+\item Course Requirements (Pre(co)requisites or incompatibilities)
+\item etc
+\end{enumerate}
+\section{Syntax}
+Specifically, we can say that each course or subplan contains some set of rules set out in the following syntax:
+
+\subsection{$req(co,cl,no\_unit,sem)$}
+
+This loosely says that our CourseOutline $co$ must contain from the list $cl$, a quantity of units equal to or greater than $no\_unit$ prior to semester $sem$.
+
+Parameters:
+
+\begin{itemize}
+\item $co$ and $cl$ are the only mandatory parameters, the rest are optional and have default values.
+\item $cl$ may be a singleton and in practice often will be
+\item $no\_unit$ will default to 6 units if not specified
+\item $sem$ will default to infinity, i.e. 'units before semester' need not be checked
+\end{itemize}
+
+\subsection{$incompat(co,cl)$}
+This simply says that our CourseOutline $co$ must not contain any items from the list $cl$.
+
+\subsection{$req\_units(co,no\_unit)$}
+This says that our our CourseOutline $co$ must contain a quantity of units equal to or greater than $no\_unit$.
+\begin{itemize}
+\item Note this could have been done using $req(co,cl,no\_unit,sem)$ with an all-encompassing $cl$ but is included for its more concise notation and execution.
+\end{itemize}
+
+\section{Examples}
+
+The following examples illustrate use of the syntax in practice for real Programs and Course as of October 2017.
+\subsection{Masters of Computing}
+\href{http://programsandcourses.anu.edu.au/program/7706XMCOMP}{Click here for Programs and Courses listing.}
+\begin{enumerate}
+\item $req\_units(co, 96)$
+\item $req(co, [COMP6250, COMP8260, \\COMP6442], 18)$
+\item $req(co, [COMP8715, COMP8755], 12)$
+\item $req(co, [COMP*]\footnote{Where COMP* refers to any COMP1234 with any variation of digits.}, 36)$
+\end{enumerate}
+\subsection{Masters of Computing Artificial Intelligence Specialisation}
+\begin{enumerate}
+\item $req(co, [COMP8420, COMP8600,\\ COMP8620, COMP8650, COMP8670,\\ ENGN6528, COMP6260, COMP6262, \\COMP6320], 24)$
+\item $req(co, [COMP8420, COMP8600,\\ COMP8620, COMP8650, COMP8670,\\ ENGN6528], 12)$
+\end{enumerate}
+
+\subsection{Course Example: $COMP8260$}
+\begin{enumerate}
+\item $req(co, [COMP6250, COMP8701],\\ 6, enrol\_sem\footnote{This is the semester in which $co$ contains $COMP8260$})$
+\end{enumerate}
+
+
+
+%------------------------------------------------
+
+\section{Summary and Discussion}
+
+
+The proposed DSL rule syntax for the Bindi system is simple and yet powerful enough to describe requirements for Courses and Programs.
+
+Some additional areas for consideration may include:
+\begin{enumerate}
+\item On processing of these rules we may expect to return a boolean for pass or fail. It may be worth considering the inclusion of human-readable feedback about the type and location of any errors, bearing in mind that a single course outline may contain many detectable problems.
+\item Some Programs (such as the advanced versions) contain requirements regarding ongoing GPA. If this is to be assessed the collection of grades for each completed CourseInstance must also be assessed and consideration given to how to process GPAs for incomplete enrolments\footnote{Do we try to estimate future grades? Can we provide useful probabilistic information?}. It may not be advisable to collect grades from non-advanced programs as data entry could be onerous and without benefit to the user for non-advanced cases, likely to be in the majority.
+\item Some consider might be given to the creation of special lists for common and large collections such as:
+\begin{enumerate}
+\item All COMP codes.
+\item All COMP1000 codes.
+\item All COMP2000 codes.
+\item All COMP3000 codes.
+\item etc.\\
+\end{enumerate}
+These would for obvious reasons be handled better by a function rather than a set of manually updated lists.
+\item Sometimes a subplan will mandate the inclusion of some other subplan. e.g. Master of Computing requires inclusion of a Masters of Computing Specialisation. COMP8260 requires Masters of Computing.]
+\paragraph*{}
+We may wish either to define these requirements in DSL rules or to instead apply them at the UX layer through constrained selections. e.g. Masters of Computing cannot be selected without also selecting a Specialisation from the  relevant dropdown menu. The latter option is more user-friendly. "Why did the system allow me to pick an impossible combination at the first screen?"1
+\end{enumerate}
+\section{Feedback}
+We're more than happy to accept any feedback on this document either at the email address at the top of this document or via issues on \href{https://gitlab.cecs.anu.edu.au/u6087050/Bindi/issues}{our gitlab}. If you spot any errors or omissions please let us know.
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

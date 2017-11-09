@@ -1,0 +1,301 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bindi</title>
+
+    <meta name="viewport" content="width=device-width, 
+         initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min1.css' %}">
+    <!-- External css -->
+   <link rel="stylesheet" type="text/css" href="{% static 'css/style2.css' %}">
+
+
+
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+     <script language="JavaScript" type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- <script  language="JavaScript" type="text/javascript" src=my.js></script>-->
+
+     <script type="text/javascript">
+       
+       
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+
+
+ window.onload=function(){
+       
+
+            
+             var g=document.getElementById("c1_s1_sy");
+            g.value=getCookie('course1');
+             
+
+            var n=document.getElementById("c2_s1_sy");
+            n.value=getCookie('course2');
+            
+             
+
+            var o=document.getElementById("c3_s1_sy");
+            o.value=getCookie('course3');
+
+            var p=document.getElementById("c4_s1_sy");
+            p.value=getCookie('course4');
+
+
+            var q=document.getElementById("c1_s2_sy");
+            q.value=getCookie('course5');
+
+
+            var r=document.getElementById("c2_s2_sy");
+            r.value=getCookie('course6');
+
+
+            var s=document.getElementById("c3_s2_sy");
+            s.value=getCookie('course7');
+
+
+            var t=document.getElementById("c4_s2_sy");
+            t.value=getCookie('course8');
+
+
+            var u=document.getElementById("c1_s1");
+            u.value=getCookie('course9');
+
+            var v=document.getElementById("c2_s1");
+            v.value=getCookie('course10');
+
+            var w=document.getElementById("c3_s1");
+            w.value=getCookie('course11');
+
+            var ap=document.getElementById("c4_s1");
+            ap.value=getCookie('course12');
+
+
+            var aq=document.getElementById("c1_s2");
+            aq.value=getCookie('course13');
+
+
+            var ar=document.getElementById("c2_s2");
+            ar.value=getCookie('course14');
+
+
+            var as=document.getElementById("c3_s2");
+            as.value=getCookie('course15');
+
+
+            var at=document.getElementById("c4_s2");
+            at.value=getCookie('course16');
+
+}
+
+function OpenWord() {
+
+                var mylink = document.getElementById("MyLink");
+                mylink.setAttribute("href", "./static/email_templates/PermissionCode.docx");
+                mylink.click();
+                 
+                var seclink = document.getElementById("SecondLink");
+                seclink.setAttribute("href", "./static/email_templates/GraduateCheck.doc");
+                seclink.click();
+
+            }
+
+
+ </script>
+
+
+   
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand" id="brandText">Bindi</a> -->
+           <!-- <img src="../static/images/bindiLogo.png" valign="bottom" height="40px" alt="Bindi Logo">-->
+            <font style="color:navy; font-size:25px; vertical-align:bottom; margin-top:100px !important;">Bindi</font>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" placeholder="University ID" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" class="form-control"/>
+                </div>
+                <button type="submit" class="btn btn-primary">Log In</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class= "container">
+
+   
+   <div><h3 style="margin-top:80px;" > Feedback</h3></div>
+  
+
+
+<div id="myDiv2" style="margin-top:30px; margin-right:400px;">
+        
+            <div class="row">
+           <div class="col-md-12">
+
+            <a href="page2.html?degree=DEGREE&specialisation=SPECIALISATION&abc=ACADEMIC+CAREER&start_year={{check}}"><h3 style="text-align:center">{{check}}</h3></a>
+            <div class="col-sm-6">
+                <form style="margin-top:20px;">
+                  <h6 style="text-align:center;"> Semester 1</h6>
+                  
+    
+    <input type="text" id="c1_s1_sy" style="width:90%; margin-left:10px;" readonly />
+   
+   
+   <input type="text" id="c2_s1_sy" style="width:90%; margin-left:10px; " readonly />
+   
+   <input type="text" id="c3_s1_sy" style="width:90%; margin-left:10px;" readonly />
+
+   <input type="text" id="c4_s1_sy" style="width:90%; margin-left:10px;" readonly />
+
+     </form>
+
+
+            
+          </div>
+          <div class="col-sm-6">
+
+            <form style="margin-top:20px;">
+              <h6 style="text-align:center;"> Semester 2</h6>
+
+    <input type="text"  id="c1_s2_sy" style="width:90%; margin-left:10px;" readonly />
+   
+    <input type="text" id="c2_s2_sy" style="width:90%; margin-left:10px; border:1px solid red;" readonly />
+   
+    <input type="text" id="c3_s2_sy" style="width:90%; margin-left:10px;" readonly />
+
+     <input type="text" id="c4_s2_sy"  style="width:90%; margin-left:10px;" readonly />
+     </form>
+            
+          </div>
+          </div>
+      </div>
+   
+
+      <div class="row">
+             <div class="col-md-12">
+
+            <h3 style="text-align:center"><a href="page3.html">{{check|add:"1"}}</a></h3>
+            <div class="col-sm-6">
+                <form style="margin-top:20px;" action="extra.html">
+                  <h6 style="text-align:center;"> Semester 1</h6>
+                   
+
+    <input type="text" id="c1_s1" style="width:90%; margin-left:10px;" readonly />
+   
+   <input type="text" id="c2_s1" style="width:90%; margin-left:10px;" readonly />
+   
+   <input type="text" id="c3_s1" style="width:90%; margin-left:10px;" readonly />
+
+   <input type="text" id="c4_s1" style="width:90%; margin-left:10px;" readonly />
+
+     </form>
+
+
+            
+          </div>
+         
+          <div class="col-sm-6">
+
+            <form style="margin-top:20px;">
+              <h6 style="text-align:center;"> Semester 2</h6>
+
+    <input type="text" id="c1_s2" style="width:90%; margin-left:10px;" readonly />
+   
+    <input type="text" id="c2_s2" style="width:90%; margin-left:10px;" readonly />
+   
+    <input type="text" id="c3_s2" style="width:90%; margin-left:10px;" readonly />
+
+     <input type="text" id="c4_s2"  style="width:90%; margin-left:10px;" readonly />
+     </form>
+            
+          </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div id="feedback">
+
+      
+
+       <input type="text" id="f1" style="width:70%; margin-left:20px; margin-bottom:10px; border: 1px solid #B22222; color:red;" value = "* To enrol in COMP8260 course you must have completed COMP6250 (Professional Practice 1)"readonly />
+
+       <input type="text" id="f2" style="width:70%; margin-left:20px; border: 1px solid #B22222;color:red;" value = "* To graduate you must complete COMP6240" readonly />
+
+       <h5 style="margin-left:10px; color:#00008B;"> * For any further queries download the email template available and contact the Student Services </h5>
+
+
+
+    </div>
+
+     
+      <div class="col-lg-12">
+    <a id="MyLink"  style="display:none"></a>
+        <input id="Button1" type="button" value="Download Email Template" onclick="OpenWord()"  style=" margin-bottom:10px; margin-top:-90px;float:right; margin-right:60px;"/>
+        
+    
+</div> 
+
+<div class="col-lg-12">
+
+<a id="SecondLink"  style="display:none"></a>
+        <input id="Button2" type="button" value="Download Email Template" onclick="OpenWord()"  style=" margin-bottom:10px; margin-top:-75px;float:right; margin-right:60px;"/>
+       
+
+</div>
+
+      
+</div>
+
+</body>
+</html>

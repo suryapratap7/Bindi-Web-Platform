@@ -1,0 +1,615 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pr",
+				"programs"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"htm",
+				"html_var"
+			],
+			[
+				"H",
+				"HttpResponse"
+			],
+			[
+				"B",
+				"BASE_DIR"
+			],
+			[
+				"hr",
+				"html_var"
+			],
+			[
+				"ht",
+				"html_"
+			],
+			[
+				"ur",
+				"urls"
+			],
+			[
+				"htt",
+				"HttpResponse"
+			],
+			[
+				"d",
+				"django"
+			],
+			[
+				"res",
+				"result2"
+			],
+			[
+				"is",
+				"isset"
+			],
+			[
+				"o",
+				"option	Tag"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"t",
+				"text-top"
+			],
+			[
+				"che",
+				"checkbox"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"co",
+				"container_plum"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"b",
+				"button	Tag"
+			],
+			[
+				"i",
+				"important"
+			],
+			[
+				"li",
+				"letter-spacing"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"c",
+				"container"
+			],
+			[
+				"hei",
+				"heim_box"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"mi",
+				"min-width"
+			],
+			[
+				"form",
+				"form_second"
+			],
+			[
+				"fi",
+				"first_container"
+			],
+			[
+				"p",
+				"padding-right"
+			],
+			[
+				"he",
+				"header	Tag"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"a",
+				"assignment"
+			],
+			[
+				"CO",
+				"color"
+			],
+			[
+				"si",
+				"sidebar"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"l",
+				"border-left"
+			],
+			[
+				"sho",
+				"showcase5"
+			],
+			[
+				"sh",
+				"showcase5"
+			],
+			[
+				"ff",
+				"FFFFF0"
+			],
+			[
+				"f",
+				"font-style"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"top",
+				"top_showcase"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"s",
+				"span	Tag"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"PADD",
+				"padding-left"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"u",
+				"ul	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/bindi/apps.py",
+			"settings":
+			{
+				"buffer_size": 150,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 7281,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/bindi/models.py",
+			"settings":
+			{
+				"buffer_size": 1444,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/bindi/admin.py",
+			"settings":
+			{
+				"buffer_size": 377,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/bindi/views.py",
+			"settings":
+			{
+				"buffer_size": 244,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/RajenderNagpal/Desktop/TechLauncher/Bindi/bindi_web_app/src/web_app/old_settings.py",
+		"/Users/RajenderNagpal/Desktop/TechLauncher/Bindi/bindi_web_app/src/web_app/settings/base.py",
+		"/Users/RajenderNagpal/Desktop/TechLauncher/Bindi/bindi_web_app/src/bindi/apps.py",
+		"/Users/RajenderNagpal/Desktop/TechLauncher/Bindi/bindi_web_app/src/bindi/tests.py",
+		"/Users/RajenderNagpal/Desktop/TechLauncher/Bindi/bindi_web_app/src/bindi/views.py",
+		"/Users/RajenderNagpal/Desktop/TechLauncher/Bindi/bindi_web_app/src/templates/base.html",
+		"/Users/RajenderNagpal/Desktop/TechLauncher/Bindi/bindi_web_app/src/web_app/urls.py",
+		"/Users/RajenderNagpal/Desktop/TechLauncher/Bindi/bindi_web_app/src/bindi/migrations/__init__.py",
+		"/Users/RajenderNagpal/Desktop/TechLauncher/Bindi/bindi_web_app/src/bindi_TechLauncher/views.py",
+		"/Users/RajenderNagpal/Desktop/TechLauncher/Bindi/bindi_web_app/src/web_app/settings/production.py",
+		"/Users/RajenderNagpal/Desktop/TechLauncher/Bindi/bindi_web_app/src/web_app/settings/local.py",
+		"/Users/RajenderNagpal/Desktop/TechLauncher/Bindi/bindi_web_app/src/web_app/settings/__init__.py",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/src/static/css/bootstrap.min.css",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/src/restaurants/__init__.py",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/src/techlauncherp1/settings/base.py",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/src/restaurants/urls.py",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/src/restaurants/views.py",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/src/techlauncherp1/urls.py",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/src/manage.py",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/src/techlauncherp1/settings/production.py",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/What Django does",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/techlauncherp1.sublime-workspace",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/techlauncherp1.sublime-project",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/src/techlauncherp1/old_settings.py",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/src/requirements.txt",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/src/techlauncherp1/settings/local.py",
+		"/Users/RajenderNagpal/Dev/djangoprojectTL/src/techlauncherp1/settings/__init__.py",
+		"/Users/RajenderNagpal/Desktop/Heimwerker/workertesting/becomeone.html",
+		"/Users/RajenderNagpal/Desktop/werkerstyle.css",
+		"/Users/RajenderNagpal/Desktop/comp1710/Assignment 1/assignment.html",
+		"/Users/RajenderNagpal/Desktop/comp1710/Assignment 1/mywebsite.html",
+		"/Users/RajenderNagpal/Desktop/comp1710/Assignment 1/contact.html",
+		"/Users/RajenderNagpal/Desktop/untitled.html",
+		"/Users/RajenderNagpal/Desktop/content1.js",
+		"/Users/RajenderNagpal/Desktop/comp1710/Assignment 1/nextboard.html",
+		"/Users/RajenderNagpal/Desktop/comp1710/Assignment 1/storyboard.html",
+		"/Users/RajenderNagpal/Desktop/comp1710/Assignment 1/sourcelog.html",
+		"/Users/RajenderNagpal/Desktop/comp1710/Assignment 1/muffin.html",
+		"/Users/RajenderNagpal/Desktop/comp1710/Assignment 1/wedding.html",
+		"/Users/RajenderNagpal/Desktop/comp1710/Assignment 1/about.html",
+		"/Users/RajenderNagpal/Desktop/Assignment 1/wedding.html",
+		"/Users/RajenderNagpal/Desktop/Assignment 1/custom.html",
+		"/Users/RajenderNagpal/Desktop/Assignment 1/about.html",
+		"/Users/RajenderNagpal/Desktop/Assignment 1/contact.html",
+		"/Users/RajenderNagpal/Desktop/Assignment 1/menu.html",
+		"/Users/RajenderNagpal/Desktop/main.css",
+		"/Users/RajenderNagpal/Desktop/first.html",
+		"/Users/RajenderNagpal/Documents/data.s"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"22px",
+			"ul",
+			"newsle",
+			"; "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/bindi/apps.py",
+					"settings":
+					{
+						"buffer_size": 150,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112,
+								112
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/templates/base.html",
+					"settings":
+					{
+						"buffer_size": 7281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3019,
+								3019
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 758.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/bindi/models.py",
+					"settings":
+					{
+						"buffer_size": 1444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1444,
+								1444
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/bindi/admin.py",
+					"settings":
+					{
+						"buffer_size": 377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								377,
+								377
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/bindi/views.py",
+					"settings":
+					{
+						"buffer_size": 244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								239,
+								239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
