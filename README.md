@@ -21,7 +21,6 @@ This is our newest project and was commenced in Aug 2017. Latest developments in
 * [Risk Assessment](https://docs.google.com/document/d/1VZXmNm6qpzCX0OCdQQnXlh9ju-BAZiEKvf297k-d0NA/edit)
 * [Technical Considerations](https://drive.google.com/drive/folders/0B7pDhhYmgcOCS0RIY1RFWkxRTnM)
 
-The decision making is recorded in the [Meeting Minutes](https://drive.google.com/drive/u/0/folders/0B5WjPO1bT5lWaVk3ZXR1Rzc0cTg), [Milestones](https://gitlab.cecs.anu.edu.au/u6087050/Bindi/milestones) and [Issues](https://gitlab.cecs.anu.edu.au/u6087050/Bindi/issues).
 
 ## Run Instructions
 
