@@ -1,7 +1,5 @@
 # Bindi
 
-Project undertaken by [TechLauncher Professional Services Team](https://gitlab.cecs.anu.edu.au/u6087050/TechLauncher_Professional_Services_Team_2017).
-
 This project's goal is to assist CECS student services by automating processing of their most frequent requests from students.
 
 ## Current Status
